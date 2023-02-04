@@ -12,7 +12,7 @@ public abstract class Roupa {
 	
 	public void escolherRoupa() {
 		this.strategy = createStrategy();
-		strategy.escolherRoupa();
+		strategy.escRoupa();
 	}
 	
 	
