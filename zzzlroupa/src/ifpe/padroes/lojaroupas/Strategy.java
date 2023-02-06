@@ -1,4 +1,4 @@
-package ifpe.padroes.projeto.roupa;
+package ifpe.padroes.lojaroupas;
 
 public abstract class Strategy {
 	
