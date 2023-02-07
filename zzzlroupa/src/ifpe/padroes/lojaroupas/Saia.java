@@ -7,24 +7,29 @@ public class Saia extends RoupaAbstracao {
 		return new SaiaStrategy();
 	}
 	
-	public void corRoupa(){
-		super.corRoupa();
+	public String corRoupa(String cor){
+		super.corRoupa(cor);
+		return cor;
 	}
 	
-	public void materialRoupa() {
-		super.materialRoupa();	
+	public String materialRoupa(String material) {
+		super.materialRoupa(material);	
+		return material;
 	}
 	
-	public void tamanhoRoupa() {
-		super.tamanhoRoupa();
+	public String tamanhoRoupa(String tamanho) {
+		super.tamanhoRoupa(tamanho);
+		return tamanho;
 	}
 	
-	public void estampaRoupa() {
-		super.estampaRoupa();
+	public String estampaRoupa(String estampa) {
+		super.estampaRoupa(estampa);
+		return estampa;
 	}
 	
-	public void generoRoupa() {
-		super.generoRoupa();
+	public String generoRoupa(String genero) {
+		super.generoRoupa(genero);
+		return genero;
 	}
 	
 }

@@ -2,6 +2,6 @@ package ifpe.padroes.lojaroupas;
 
 public abstract class GeneroImp {
 
-	public abstract void generoRoupaImp();
+	public abstract String generoRoupaImp(String genero);
 	
 }

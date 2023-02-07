@@ -14,6 +14,9 @@ public abstract class RoupaAbstracao {
 	private String nome;
 	private String marca;
 	private int valor;	
+	private boolean isSaia = false;
+	private boolean isCalca = false;
+	private boolean isBlusa = false;
 	
 	public abstract Strategy createStrategy();
 	
@@ -22,24 +25,29 @@ public abstract class RoupaAbstracao {
 		strategy.escRoupa();
 	}
 	
-	public void corRoupa(){
-		getImpC().corRoupaImp();
+	public String corRoupa(String cor){
+		getImpC().corRoupaImp(cor);
+		return cor;
 	}
 	
-	public void materialRoupa() {
-		getImpM().materialRoupaImp();	
+	public String materialRoupa(String material) {
+		getImpM().materialRoupaImp(material);	
+		return material;
 	}
 	
-	public void tamanhoRoupa() {
-		getImpT().tamanhoRoupaImp();	
+	public String tamanhoRoupa(String tamanho) {
+		getImpT().tamanhoRoupaImp(tamanho);	
+		return tamanho;
 	}
 	
-	public void estampaRoupa() {
-		getImpE().estampaRoupaImp();	
+	public String estampaRoupa(String estampa) {
+		getImpE().estampaRoupaImp(estampa);	
+		return estampa;
 	}
 	
-	public void generoRoupa() {
-		getImpG().generoRoupaImp();	
+	public String generoRoupa(String genero) {
+		getImpG().generoRoupaImp(genero);
+		return genero;
 	}
 	
 	
@@ -126,7 +134,30 @@ public abstract class RoupaAbstracao {
 	public void setValor(int valor) {
 		this.valor = valor;
 	}
-	
+
+	public boolean isSaia() {
+		return isSaia;
+	}
+
+	public void setSaia(boolean isSaia) {
+		this.isSaia = isSaia;
+	}
+
+	public boolean isCalca() {
+		return isCalca;
+	}
+
+	public void setCalca(boolean isCalca) {
+		this.isCalca = isCalca;
+	}
+
+	public boolean isBlusa() {
+		return isBlusa;
+	}
+
+	public void setBlusa(boolean isBlusa) {
+		this.isBlusa = isBlusa;
+	}
 	
 	
 }

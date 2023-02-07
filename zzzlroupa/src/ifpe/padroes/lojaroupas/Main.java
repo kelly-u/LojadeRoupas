@@ -45,6 +45,7 @@ public class Main {
 			
 			if(r == 1) {
 				saia.escolherRoupa();
+				//saia.corRoupa();
 
 			} else if (r == 2){
 				blusa.escolherRoupa();

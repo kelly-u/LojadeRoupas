@@ -5,7 +5,6 @@ public class BlusaStrategy extends Strategy {
 	@Override
 	public void escRoupa() {
 		System.out.println("Blusa Escolhida!");
-		
 	}
 
 }
