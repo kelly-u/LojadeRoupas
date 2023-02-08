@@ -2,6 +2,7 @@ package ifpe.gleice.padroes.lojaroupas;
 
 public class Calca extends RoupaAbstracao {
 
+	
 	@Override
 	public Strategy createStrategy() {
 		return new CalcaStrategy();
